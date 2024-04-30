@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita&family=Dancing+Script&family=Montserrat&family=Poppins:wght@300;400&family=Tillana:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Amita&family=Dancing+Script&family=Eczar:wght@600&family=Montserrat&family=Poppins:wght@300;400&family=Tillana:wght@600&family=Tilt+Neon&family=Titan+One&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</head>
+<body>
+<style>
+body {
+   width: 100vw;
+   margin: 0px;
+   background-image: url(https://vitbhopal.ac.in/file/2020/02/Academic-Block-VIT-Bhopal-2-scaled-e1580792952114.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+    background-color: #3c434b;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    color: #fff;
+}
+li{
+   padding: 20px;
+   font-family: Montserrat;
+}
+.wrapper {
+   width: 100vw;
+   margin: 0 auto;
+   height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   transition: all 0.3s ease;
+   padding-right: 0 4%;
+   padding-top: 1px;
+   padding-bottom: 1px;
+}
+
+@media screen and (max-width: 767px) {
+   .wrapper {
+      height: 700px;
+   }
+}
+
+.content {
+   max-width: 1024px;
+   display:grid;
+   grid-template-columns: auto auto auto auto;
+   width: 100%;
+   padding: 0 4%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+   .content {
+      padding-top: 300px;
+      flex-direction: column;
+   }
+}
+
+.card {
+   width: 100%;
+   max-width: 300px;
+   min-width: 200px;
+   height: 250px;
+   background-color: rgb(236, 236, 236);
+   margin: 10px;
+   border-radius: 10px;
+   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+   border: 2px solid rgba(7, 7, 7, 0.12);
+   font-size: 16px;
+   transition: all 0.3s ease;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.icon {
+   margin: 0 auto;
+   width: 100%;
+   height: 80px;
+   max-width:80px;
+   background: linear-gradient(90deg, #FF7E7E 0%, #FF4848 40%, rgba(10, 9, 9, 0.28) 60%);
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: black;
+   transition: all 0.8s ease;
+   background-position: 0px;
+   background-size: 200px;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.card .title {
+   width: 100%;
+   margin: 5px;
+   text-align: center;
+   margin-top: 30px;
+   color: black;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   font-family: Montserrat;
+}
+
+.card .text {
+   width: 80%;
+   margin: 0 auto;
+   font-size: 13px;
+   text-align: center;
+   margin-top: 20px;
+   color: black;
+   font-weight: 200;
+   letter-spacing: 2px;
+   opacity: 0;
+   max-height:0;
+   transition: all 0.3s ease;
+   font-family: Montserrat;
+}
+
+.card:hover {
+   height: 270px;
+}
+
+.card:hover .info {
+   height: 90%;
+}
+
+.card:hover .text {
+   transition: all 0.3s ease;
+   opacity: 1;
+   max-height:40px;
+}
+
+.card:hover .icon {
+   background-position: -120px;
+   transition: all 0.3s ease;
+}
+
+.card:hover .icon i {
+   background: linear-gradient(90deg, #FF7E7E, #FF4848);
+   -webkit-text-fill-color: transparent;
+   opacity: 1;
+   transition: all 0.3s ease;
+}
+.heading{
+    margin: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    float: top;
+    margin-left: 10%;
+    font-size: 200%;
+    font-family: Montserrat;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+}
+#head{
+    border-left: 5px solid rgb(252, 194, 4);
+    padding-left: 20px;
+}
+@keyframes heading{
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+}
+
+.heading{
+    animation: slide-left-right 4s;
+}
+</style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00246B; padding: 10px; color: white;" >
+		<div class="container px-4">
+		  <a class="navbar-brand" href="homepage.html">
+			<span style="color:white; font-size:27px; font-weight:bold; letter-spacing: 1px; font-family: Eczar">UniLodge</span>
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+			  class="navbar-toggler-icon"></span></button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+			  <li class="nav-item"><a class="nav-link" style = "font-size: 17px" href="homepage.html">Home</a></li>
+			  <li class="nav-item"><a class="nav-link" style = "font-size: 17px" href="logins.html">Login</a></li>
+			  <li class="nav-item"><a class="nav-link" style = "font-size: 17px" href="register.html">Register</a></li>
+			  <li class="nav-item"><a class="nav-link" style = "font-size: 17px" href="contacts.html">Contact Us</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+
+<header>
+    <div class="heading">
+        <p id = "head">STAFF PAGE</p>
+    </div>
+    
+</header>
+
+<div class="wrapper">
+
+   <div class="content">
+
+    <button class="card" onclick="window.location.href='review.html';">
+
+            <div class="icon"><i class="material-icons md-36" >add</i></div>
+            <p class="title">Review</p>
+            <p class="text">Review lodged complaints</p>
+
+    </button>
+
+    <button class="card" onclick="window.location.href='followup.html';">
+
+            <div class="icon"><i class="material-icons md-36">description</i></div>
+            <p class="title">Follow Up</p>
+            <p class="text">Contact the respective ppl regarding complaint</p>
+
+    </button>
+
+   </div>
+
+</div>
+
+</body>
+</html>

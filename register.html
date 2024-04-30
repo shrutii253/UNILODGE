@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniLodge-Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita&family=Dancing+Script&family=Montserrat&family=Poppins:wght@300;400&family=Tillana:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Amita&family=Dancing+Script&family=Eczar:wght@600&family=Montserrat&family=Poppins:wght@300;400&family=Tillana:wght@600&family=Tilt+Neon&family=Titan+One&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+<style>
+        body{
+            margin: 0px;
+            background-image: url(https://qph.cf2.quoracdn.net/main-qimg-9294c1c4dfeac81b6a772f1653735006);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0px;
+            background-color: #4c535b;
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: multiply;
+            color: #fff;
+        }
+        li{
+            padding: 20px;
+            font-family: montserrat;
+        }
+        .nav-link{
+            color: white;
+        }
+        .nav-link:hover{
+            color: rgb(255, 230, 0);
+        }
+        .form{
+            width: 40%;
+            height: fit-content;
+            margin: auto;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        form{
+            border: lightgray solid 2px;
+            border-radius: 5px;
+            padding: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: whitesmoke;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]{
+            width: 97%;
+            padding: 8px;
+            margin: 4px;
+        }
+        select{
+            margin: 5px;
+            padding: 5px;
+        }
+        input[type="submit"]{
+            background-color: #008000;
+            padding: 10px;
+            font-size: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 5px;
+            border: 5px #008000;
+            margin: 5px;
+            color: white;
+        }   
+        header{
+            font-family: Montserrat;
+        }
+    </style>
+
+    <script>
+        const message = document.querySelector('button');
+        message.addEventListener('click', dropDown);
+        function dropDown() {
+            let para = alert('Thank you for registering.');
+        }
+    </script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00246B; padding: 10px; color: white;" >
+		<div class="container px-4">
+		  <a class="navbar-brand" href="homepage.html">
+			<span style="color:white; font-size:27px; font-weight:bold; letter-spacing: 1px; font-family: Eczar">UniLodge</span>
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+			  class="navbar-toggler-icon"></span></button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+			  <li class="nav-item"><a class="nav-link" style = "font-size: 17px" href="homepage.html">Home</a></li>
+			  <li class="nav-item"><a class="nav-link" style = "font-size: 17px" href="logins.html">Login</a></li>
+			  <li class="nav-item"><a class="nav-link" style = "font-size: 17px" href="register.html">Register</a></li>
+			  <li class="nav-item"><a class="nav-link" style = "font-size: 17px" href="contacts.html">Contact Us</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+    <div class="form">
+        <header>
+            <h4 style="text-align: center;">NEW USER REGISTRATION</h4>
+        </header>
+        <form onsubmit = dropDown()>
+            <input type="text" placeholder="Name">
+            <br><br>
+            <input type="email" placeholder="Email Address">
+            <br><br>
+            <input type="text" placeholder="Phone Number">
+            <br><br>
+            <input type="text" placeholder="Registration Number">
+            <br><br>
+            <select name="Gender" id="101">
+                <option value="--Gender--">--Gender--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <br><br>
+            <input type="password" placeholder="Password">
+            <br><br>
+            <input type="password" placeholder="Re-Enter Password">
+            <br><br>
+            <select name="Hostel Type" id="101">
+                <option value="--Choose Hostel--">--Choose Hostel--</option>
+                <option value="GH Block 1">GH Block 1</option>
+                <option value="GH Block 2">GH Block 2</option>
+                <option value="BH Block 1">BH Block 1</option>
+                <option value="BH Block 2">BH Block 2</option>
+                <option value="BH Block 3">BH Block 3</option>
+                <option value="BH Block 4">BH Block 4</option>
+                <option value="BH Block 5">BH Block 5</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+            <br>
+        </form>
+    </div>
+
+</body>
+</html>

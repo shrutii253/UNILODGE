@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Complaint</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita&family=Dancing+Script&family=Montserrat&family=Poppins:wght@300;400&family=Tillana:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Amita&family=Dancing+Script&family=Eczar:wght@600&family=Montserrat&family=Poppins:wght@300;400&family=Tillana:wght@600&family=Tilt+Neon&family=Titan+One&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+<style>
+        body{
+            margin: 0px;
+        }
+        li{
+            padding: 20px;
+            font-family: Montserrat;
+        }
+        .nav-link{
+            color: white;
+        }
+        .nav-link:hover{
+            color: rgb(255, 230, 0);
+        }
+        .form{
+            width: 40%;
+            height: fit-content;
+            margin: auto;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        form{
+            border: lightgray solid 2px;
+            border-radius: 5px;
+            padding: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: whitesmoke;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea{
+            width: 97%;
+            padding: 8px;
+            margin: 4px;
+        }
+        select{
+            margin: 5px;
+            padding: 5px;
+        }
+        button{
+            background-color: #008000;
+            padding: 10px;
+            font-size: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 5px;
+            border: 5px #008000;
+            margin: 5px;
+            color: white;
+        }
+        button:hover{
+            box-shadow: 2px black;
+        }  
+        header{
+            font-family: Montserrat;
+        }
+    </style>
+    
+    <script>
+        const message = document.querySelector('button');
+        message.addEventListener('click', dropDown);
+        function dropDown() {
+            let para = alert('Your complaint has been submitted. Thank you');
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00246B; padding: 10px; color: white;" >
+		<div class="container px-4">
+		  <a class="navbar-branda" href="homepage.html">
+			<span style="color:white; font-size:27px; font-weight:bold; letter-spacing: 1px; font-family: Eczar">UniLodge</span>
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+			  class="navbar-toggler-icon"></span></button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+			  <li class="nav-item"><a class="nav-link" style = "font-size: 17px" href="homepage.html">Home</a></li>
+			  <li class="nav-item"><a class="nav-link" style = "font-size: 17px" href="logins.html">Login</a></li>
+			  <li class="nav-item"><a class="nav-link" style = "font-size: 17px" href="register.html">Register</a></li>
+			  <li class="nav-item"><a class="nav-link" style = "font-size: 17px" href="contacts.html">Contact Us</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+    <div class="form">
+        <header>
+            <h4 style="text-align: center; font-weight: bold">COMPLAINT FORM</h4>
+        </header>
+        <form onsubmit="dropDown()">
+            <input type="text" placeholder="Name">
+            <br><br>
+            <input type="text" placeholder="Registration Number">
+            <br><br>
+            <input type="text" placeholder="Contact Number">
+            <br><br>
+            <select name="Room" id="101">
+                <option value="--Room Type--">--Room Type--</option>
+                <option value="1 NAC">1 NAC</option>
+                <option value="2 NAC">2 NAC</option>
+                <option value="2 AC">2 AC</option>
+                <option value="3 NAC">3 NAC</option>
+                <option value="3 AC">3 AC</option>
+                <option value="4 NAC">4 NAC</option>
+                <option value="4 AC">4 AC</option>
+                <option value="5 NAC">5 NAC</option>
+                <option value="6 NAC">6 NAC</option>
+                <option value="8 NAC">8 NAC</option>
+            </select>
+            <br><br>
+            <input type="text" placeholder="Room Number">
+            <br><br>
+            <select name="Complaint" id="102">
+                <option value="--Complaint Type--">--Complaint Type--</option>
+                <option value="1">Room Cleaning</option>
+                <option value="2">Electrician</option>
+                <option value="3">Room Repair</option>
+                <option value="4">Other</option>
+            </select>
+            <br><br>
+            <textarea name="text" placeholder="If other, please specify" rows="5"></textarea>
+            <br><br>
+            <textarea name="text" placeholder="Your complaint here" rows="10"></textarea>
+            <br><br>
+            <button>Submit</button>
+            <br><br>
+        </form>
+    </div>
+
+</body>
+</html>
